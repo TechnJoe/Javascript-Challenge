@@ -44,3 +44,6 @@ d3.selectAll("#filter-btn").on("click", handleClick);
 
 // Build Table
 buildTable(tableData);
+
+//Prevent page from refreshing
+//d3.event.preventDefault();
