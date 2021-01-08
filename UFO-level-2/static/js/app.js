@@ -66,6 +66,13 @@ button1.on("click", function() {
   showTable(filteredData);
 });
 
+//Make it so that the "Refresh" button refreshes the page to reset everything
+var refreshEntries = d3.select("#Refresh-btn");
+refreshEntries.on("click", function() {
+  location.reload();
+});
+
+
 //clear form filters and show all data
 function resetForm(element) {
   element.form.reset();
